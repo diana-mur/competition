@@ -1,8 +1,10 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import Entry from './Entry/Entry'
 import './index.css'
+import Admin from './Admin/admin'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-    <Entry />
+    <>
+        <Admin />
+    </>
 )

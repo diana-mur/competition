@@ -1,5 +1,16 @@
 @charset "UTF-8";
 
+#root {
+  height: 100%;
+  width: 100%;
+  background-color: #F5F8FA;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
 *:where(:not(html, iframe, canvas, img, svg, video, audio, select, input):not(svg *, symbol *)) {
   all: unset;
   display: revert;
@@ -47,14 +58,13 @@ li {
 }
 
 body {
-  font-family: Qanelas, sans-serif;
+  font-family: Montserrat;
   display: flex;
   min-width: 320px;
   min-height: 100vh;
-  background-color: #1E2538;
-  color: #fff;
+  background-color: #F5F8FA;
+  color: #000;
   overflow-x: hidden;
-  padding-bottom: 10vh;
 }
 
 h1 {
@@ -67,6 +77,7 @@ h2 {
 
 h3 {
   font-size: 20px;
+  font-weight: 500;
 }
 
 h4 {
@@ -84,4 +95,8 @@ h6 {
 .container {
   width: 80%;
   margin-inline: auto;
+}
+
+button:hover{
+  cursor: pointer;
 }
