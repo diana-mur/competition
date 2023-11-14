@@ -1,0 +1,86 @@
+@charset "UTF-8";
+
+*:where(:not(html, iframe, canvas, img, svg, video, audio, select, input):not(svg *, symbol *)) {
+  all: unset;
+  display: revert;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+/* Remove list styles (bullets/numbers) */
+ol,
+ul,
+menu {
+  list-style: none;
+}
+
+/* For images to not be able to exceed their container */
+img {
+  max-inline-size: 100%;
+  max-block-size: 100%;
+}
+
+/* removes spacing between cells in tables */
+table {
+  border-collapse: collapse;
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+
+ul,
+ol,
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: Qanelas, sans-serif;
+  display: flex;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: #1E2538;
+  color: #fff;
+  overflow-x: hidden;
+  padding-bottom: 10vh;
+}
+
+h1 {
+  font-size: 32px;
+}
+
+h2 {
+  font-size: 25px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+h6 {
+  font-size: 12px;
+}
+
+.container {
+  width: 80%;
+  margin-inline: auto;
+}
