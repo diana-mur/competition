@@ -1,0 +1,19 @@
+.header {
+    width: 100%;
+    min-height: 70px;
+    background-color: #1B1B28;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 200px;
+}
+
+.headerButtons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.headerButtons h4 {
+    color: #FFF;
+}
